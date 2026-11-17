@@ -1,0 +1,29 @@
+:root { color-scheme: light; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f3ee; color: #252a29; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { max-width: 960px; margin: 0 auto; padding: clamp(20px, 3vw, 40px) 22px 48px; }
+.eyebrow { margin: 0 0 12px; color: #4e625b; font-size: .78rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+h1 { max-width: 760px; margin: 0 0 16px; font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: 1.04; letter-spacing: -.045em; }
+h2 { font-size: clamp(1.25rem, 2vw, 1.6rem); letter-spacing: -.025em; }
+.intro > p:not(.eyebrow) { max-width: 660px; line-height: 1.6; }
+.privacy { display: inline-block; margin: 8px 0 26px; padding: 9px 13px; border-radius: 99px; background: #dfeae1; color: #224c39; font-size: .86rem; font-weight: 650; }
+.scenario-list { display: flex; flex-wrap: wrap; gap: 9px; margin: 12px 0 20px; }
+.scenario-list button { appearance: none; border: 1px solid #b9c4bd; border-radius: 99px; padding: 10px 16px; background: transparent; color: #2a3b34; font: inherit; font-size: .9rem; font-weight: 650; cursor: pointer; }
+.scenario-list button:hover { background: #e5ebe5; }
+.scenario-list button[aria-pressed="true"] { background: #22563e; color: #fff; border-color: #22563e; }
+.scenario-list button:focus-visible, a:focus-visible { outline: 3px solid #d27843; outline-offset: 3px; }
+.result { padding: clamp(20px, 4vw, 38px); background: #fff; border: 1px solid #dde1dc; border-radius: 20px; box-shadow: 0 18px 42px rgba(22, 39, 31, .06); }
+.result h2 { margin: 0 0 8px; }
+.result > p:not(.eyebrow) { margin: 0 0 24px; color: #53605a; line-height: 1.55; }
+.decisions { display: grid; gap: 10px; }
+.decision { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 17px 0; border-top: 1px solid #e3e7e3; }
+.decision h3 { margin: 0 0 5px; font-size: 1rem; }
+.decision p { margin: 0; color: #59645e; font-size: .9rem; line-height: 1.45; }
+.tag { flex: none; padding: 7px 10px; border-radius: 99px; background: #edf0ed; color: #526059; font-size: .8rem; font-weight: 700; text-transform: capitalize; }
+.tag.earned { background: #dcefe1; color: #185236; }
+.outcome { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 17px; padding-top: 20px; border-top: 2px solid #dbe7dc; font-size: .95rem; }
+.outcome strong { font-size: 1.2rem; text-transform: capitalize; }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; color: #59645e; font-size: .86rem; }
+footer p { margin: 0; }
+a { color: #22563e; font-weight: 700; }
+@media (max-width: 580px) { .decision { align-items: flex-start; flex-direction: column; gap: 10px; } .privacy { border-radius: 14px; } }

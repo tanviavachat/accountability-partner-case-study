@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accountability Partner · Fictional Rule Demo</title>
+  <meta name="description" content="A privacy-safe, fictional demonstration of evidence and correction rules in an AI accountability companion.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="intro">
+      <p class="eyebrow">AI product case study · interactive demo</p>
+      <h1>Progress should survive an honest correction.</h1>
+      <p>Explore a small rule model from an accountability companion. Each example below is <strong>fictional demonstration data</strong>, not a real journal entry.</p>
+      <p class="privacy">Runs in this browser only · no account · no storage · no AI calls</p>
+    </header>
+
+    <section aria-labelledby="scenarios-heading">
+      <h2 id="scenarios-heading">Choose a fictional situation</h2>
+      <div id="scenarios" class="scenario-list"></div>
+    </section>
+
+    <section class="result" aria-labelledby="result-heading" aria-live="polite">
+      <p class="eyebrow">What the rule decides</p>
+      <h2 id="result-heading"></h2>
+      <p id="context"></p>
+      <div id="decisions" class="decisions"></div>
+      <div class="outcome"><span>Brick earned</span><strong id="bricks"></strong></div>
+    </section>
+
+    <footer>
+      <p>This is a simplified, deterministic demonstration. The working app and personal records are private.</p>
+      <a href="https://github.com/tanviavachat/accountability-partner-case-study">Read the product case study</a>
+    </footer>
+  </main>
+  <script src="../src/evidence.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
